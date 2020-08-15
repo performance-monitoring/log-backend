@@ -1,0 +1,55 @@
+{
+  "name": "log-backend",
+  "version": "1.0.0",
+  "description": "node后端，接收日志请求",
+  "main": "index.js",
+  "scripts": {
+    "jest": "jest --",
+    "dev": "nodemon",
+    "prod": "rm -rf dist && export NODE_ENV=production && tsc",
+    "test": "rm -rf dist && export NODE_ENV=development && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/performance-monitoring/log-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/performance-monitoring/log-backend/issues"
+  },
+  "homepage": "https://github.com/performance-monitoring/log-backend#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "@types/signale": "^1.4.1",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.0",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.5",
+    "typescript-eslint-parser": "^22.0.0"
+  },
+  "dependencies": {
+    "@types/koa": "^2.11.3",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.4.1",
+    "@types/log4js": "^2.3.5",
+    "@types/node": "^14.0.27",
+    "jest-canvas-mock": "^2.2.0",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^9.4.0",
+    "log4js": "^6.3.0",
+    "nodemon": "^2.0.4",
+    "save-dev": "0.0.1-security",
+    "signale": "^1.4.0",
+    "ts-node": "^8.10.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*",
+      "docs/*"
+    ],
+    "delay": "100",
+    "exec": "ts-node  ./src/index.ts"
+  }
+}
