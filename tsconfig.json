@@ -12,6 +12,7 @@
     "alwaysStrict": true,                  /* Parse in strict mode and emit "use strict" for each source file. */
     "sourceMap": false,
     "downlevelIteration": true,
+    "resolveJsonModule": true,
     "baseUrl": ".",
     "outDir": "./dist"
   },
