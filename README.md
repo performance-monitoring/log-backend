@@ -17,3 +17,5 @@ node后端，接收日志请求
 * npm run install
 * npm run dev
 
+## 查询索引
+curl "http://localhost:9200/_cat/indices?v"
